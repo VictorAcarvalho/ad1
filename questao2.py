@@ -21,5 +21,4 @@ def main():
         print("\n")
     return(maxAndMinimalElements(values))
 
-
 main()

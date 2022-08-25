@@ -1,6 +1,7 @@
 from __future__ import division
 
 
+print("="*100)
 print("Bem vindo ao programa de soma entre números e suas médias")
 values= []
 division = 0
