@@ -24,7 +24,7 @@ def main():
     print("A linha com mais vogais sem acento: {}".format(mostAccentueLine))
     print("Quantidade de vogais sem acento: {}".format(mostVowel))
     print("A maior palavra digita é :  {}".format(bigWord))
-    palindrome(phrases)
+    palindrome(splitedStrings)
 
 def mostAccentue(phrasesList):
     mostAccentuesPhrase = (max(phrasesList, key=str.isascii))
@@ -45,10 +45,11 @@ def biggestWord(lst):
     return resulted
 
 def palindrome(lst):
-    palindrome= []
+    palindrome= ""
     for i in lst :
-        if i == i[::-1] :
-            palindrome.append(i)
+        for j in i:
+            if j == j[::-1]:
+                palindrome = i
     return print(palindrome)
 
     
